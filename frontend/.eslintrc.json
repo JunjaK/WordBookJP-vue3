@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2019,
+    "sourceType": "module"
+  },
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "vue"
+  ],
+  "rules": {
+    "no-console":"off",
+    "no-debugger":"off",
+    "no-unused-vars": "warn",
+    "comma-dangle": ["error", "always-multiline"],
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-shadow": 0,
+    "import/prefer-default-export": 0,
+    "max-len": ["warn", { "code": 200 }],
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "jsx": "never",
+      "vue": "never",
+      "ts": "never",
+      "tsx": "never"
+    }],
+    "indent": [2, 2]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@", "./docs"]
+        ],
+        "extensions": [".js", ".vue", ".ts", ".jsx", ".tsx"]
+      }
+    }
+  }
+}
