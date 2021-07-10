@@ -3,9 +3,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest --watch",
+    "test-f": "jest"
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.6",
     "axios": "^0.21.1",
     "date-fns": "^2.22.1",
     "lodash": "^4.17.21",
@@ -14,16 +17,27 @@
     "vuex": "^4.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
     "@vitejs/plugin-vue": "^1.2.4",
+    "@vitejs/plugin-vue-jsx": "^1.1.6",
     "@vue/compiler-sfc": "^3.0.5",
-    "typescript": "^4.3.2",
-    "vite": "^2.4.0",
-    "vue-tsc": "^0.0.24",
+    "@vue/test-utils": "^2.0.0-rc.10",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-vue": "^7.13.0"
+    "eslint-plugin-vue": "^7.13.0",
+    "jest": "^27.0.6",
+    "jest-serializer-vue": "^2.0.2",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.0",
+    "vite-plugin-components": "^0.12.2",
+    "vite-plugin-windicss": "^1.2.4",
+    "vue-jest": "^5.0.0-alpha.10",
+    "vue-tsc": "^0.0.24",
+    "windicss": "^3.1.4"
   }
 }
