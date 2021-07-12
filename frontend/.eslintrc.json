@@ -10,8 +10,10 @@
     "sourceType": "module"
   },
   "extends": [
+    "eslint:recommended",
     "airbnb-base",
-    "plugin:vue/recommended"
+    "plugin:import/recommended",
+    "plugin:vue/vue3-strongly-recommended"
   ],
   "plugins": [
     "vue"
@@ -39,9 +41,17 @@
     "import/resolver": {
       "alias": {
         "map": [
-          ["@", "./docs"]
+          [
+            "@", "./src"
+          ]
         ],
-        "extensions": [".js", ".vue", ".ts", ".jsx", ".tsx"]
+        "extensions": [
+          ".js",
+          ".vue",
+          ".ts",
+          ".jsx",
+          ".tsx"
+        ]
       }
     }
   }
