@@ -4,17 +4,26 @@
     src="./assets/logo.png"
   >
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <hello-world />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
+import flatToTree from '@/utils/Mixins/Components/modalMixins';
+import TestC from '@/components/HelloWorld2.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     HelloWorld,
+  },
+  created() {
+    console.log('test');
+  },
+  methods: {
+    name() {
+      flatToTree();
+    },
   },
 });
 </script>
